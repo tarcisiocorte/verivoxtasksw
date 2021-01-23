@@ -7,6 +7,6 @@ namespace Verivox.Domain
 {
     public interface ITariffCalculator
     {
-        ProductModel CalculateTariff(ProductModel product,int consumptionPerYear);
+        ProductModel Calculate(ProductModel product,int consumptionPerYear);
     }
 }

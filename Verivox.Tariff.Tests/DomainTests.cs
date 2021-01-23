@@ -27,8 +27,8 @@ namespace Verivox.Tariff.Tests
             ProductModel productA = new ProductModel("A");
             ProductModel productB = new ProductModel("B");
 
-            var resultA = this.tariffCalculatorProductA.CalculateTariff(productA, 9000);
-            var resultB = this.tariffCalculatorProductB.CalculateTariff(productB, 9000);
+            var resultA = this.tariffCalculatorProductA.Calculate(productA, 9000);
+            var resultB = this.tariffCalculatorProductB.Calculate(productB, 9000);
 
             resultA.Should().NotBeNull();
             resultA.Title.Should().Be("A");
@@ -45,8 +45,8 @@ namespace Verivox.Tariff.Tests
             ProductModel productA = new ProductModel("A");
             ProductModel productB = new ProductModel("B");
 
-            var resultA = this.tariffCalculatorProductA.CalculateTariff(productA, 0);
-            var resultB = this.tariffCalculatorProductB.CalculateTariff(productB, 0);
+            var resultA = this.tariffCalculatorProductA.Calculate(productA, 0);
+            var resultB = this.tariffCalculatorProductB.Calculate(productB, 0);
 
             resultA.Should().NotBeNull();
             resultA.Title.Should().Be("A");

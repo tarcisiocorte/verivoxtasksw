@@ -20,8 +20,8 @@ namespace Verivox.Service
             List<ProductModel> list = new List<ProductModel>();
             ProductModel productA = new ProductModel("Basic electricity tariff");
             ProductModel productB = new ProductModel("Packaged tariff");
-            productA = this.tariffCalculatorProductA.CalculateTariff(productA, consumptionPerYear);
-            productB = this.tariffCalculatorProductB.CalculateTariff(productB, consumptionPerYear);
+            productA = this.tariffCalculatorProductA.Calculate(productA, consumptionPerYear);
+            productB = this.tariffCalculatorProductB.Calculate(productB, consumptionPerYear);
 
             list.Add(productA);
             list.Add(productB);

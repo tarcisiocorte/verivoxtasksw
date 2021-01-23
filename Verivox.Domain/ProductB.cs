@@ -6,7 +6,7 @@ namespace Verivox.Domain
 {
     public class ProductB: ITariffCalculator
     {
-        public ProductModel CalculateTariff(ProductModel product, int consumptionPerYear)
+        public ProductModel Calculate(ProductModel product, int consumptionPerYear)
         {
             double resultTariff = VerivoxConstants.ProductB.BaseTariff;
             if(consumptionPerYear > VerivoxConstants.ProductB.FlatUsagePolicy)
